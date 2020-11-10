@@ -4,14 +4,18 @@
     box-sizing: border-box;
     font-size: 16px;
 }
+body {
+    background-image: radial-gradient(#c7eef5, #ffffff, rgb(235, 235, 235));
+}
 
 .container {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% -50%);
-
     .base {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% -50%);
         background-color: #F4BF01;
         width: 6em;
         height: 18em;
@@ -125,7 +129,6 @@
     top: 50%;
     left: 30%;
     transform: translate(-50% -50%);
-
     .base2 {
         background-color: #F4BF01;
         width: 6em;
@@ -239,7 +242,6 @@
     top: 50%;
     left: 70%;
     transform: translate(-50% -50%);
-
     .base3 {
         background-color: #F4BF01;
         width: 6em;

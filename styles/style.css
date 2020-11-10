@@ -6,15 +6,21 @@
   font-size: 16px;
 }
 
+body {
+  background-image: radial-gradient(#c7eef5, #ffffff, #ebebeb);
+}
+
 .container {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50% -50%);
-          transform: translate(-50% -50%);
 }
 
 .container .base {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50% -50%);
+          transform: translate(-50% -50%);
   background-color: #F4BF01;
   width: 6em;
   height: 18em;
