@@ -12,12 +12,14 @@
     transform: translate(-50% -50%);
 
     .base {
-        background-color: yellow;
+        background-color: #F4BF01;
         width: 6em;
         height: 18em;
         border-radius: 0 0 12% 12%;
         .wrapper{
-            background-color: yellowgreen;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23f4bf01' fill-opacity='0.49' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");;
+            
+            background-color: #F1E1A0;
             position: relative;
             width: inherit;
             height: 15em;
@@ -35,7 +37,7 @@
            }
            .text2 {
                 display: inline-block;
-                background-color: red;
+                background-color: #CC0A5A;
                 width: 15em;
                 right: 4em;
                 top: 2.9em;
@@ -46,19 +48,61 @@
                left: 3em;
                
             }
-        }
+        }   
     }
     .wrapper:after {
         content: " ";
         display: inline-block;
         position: relative;
-        background-color: yellow;
+        background-color: #F4BF01;
         border-radius: 0 0 50% 50%;
         width: 6em;
         height: 1em;
         bottom: 9.4em;
         z-index: 2;
+    }
 
+    .lid {
+        position: relative;
+        bottom: 20em;
+        //z-index: 3;
+        background-color: #CC0A5A;
+        width: 6em;
+        height: 6em;
+        display: block;
+        border-radius: 20% 20% 35% 35%;
+        .base_lid {
+            display: inline-block;
+            position: relative;
+            top: 2em;
+            background-color: #CC0A5A;
+            width: 6em;
+            height: 1em;
+            border-radius: 50% 50% 0 0;
+            transform: rotate(180deg);
+            z-index:3;
+        }
+    } 
+    .lid:before {
+        content: " ";
+        display: inline-block;
+        position: relative;
+        bottom: .5em;
+        background-color: #e03e77;
+        width: 6em;
+        height: 2em;
+        border-radius: 50% 50% 0 0;
+    }
+    .lid:after {
+        content: " ";
+        display: inline-block;
+        position: relative;
+        bottom: 2.5em;
+        background-color: #e03e77;
+        width: 6em;
+        height: 1em;
+        border-radius: 50% 50% 0 0;
+        transform: rotate(180deg);
     }
 }
 
