@@ -13,8 +13,52 @@
 
     .base {
         background-color: yellow;
-        width: 2em;
-        height: 6em;
+        width: 6em;
+        height: 18em;
+        border-radius: 0 0 12% 12%;
+        .wrapper{
+            background-color: yellowgreen;
+            position: relative;
+            width: inherit;
+            height: 15em;
+            top: 3em;
+            border-radius: 0 0 12% 12%;
+            z-index: 1;
+            .text {
+                display: inline-block;
+                transform: rotate(90deg);
+                position: relative;
+           }
+           .text1 {
+               right: 5em;
+               top: 5em;
+           }
+           .text2 {
+                display: inline-block;
+                background-color: red;
+                width: 15em;
+                right: 4em;
+                top: 2.9em;
+                text-align: center;
+                color: #ffffff;
+           }
+           .text3 {
+               left: 3em;
+               
+            }
+        }
+    }
+    .wrapper:after {
+        content: " ";
+        display: inline-block;
+        position: relative;
+        background-color: yellow;
+        border-radius: 0 0 50% 50%;
+        width: 6em;
+        height: 1em;
+        bottom: 9.4em;
+        z-index: 2;
+
     }
 }
 
